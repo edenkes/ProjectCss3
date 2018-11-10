@@ -1,0 +1,108 @@
+/* ========================================
+
+    CODE YOUR STYLES BELOW!
+
+   ====================================== */
+
+/* MODERN LAYOUT #1 */
+
+.layout1 article {
+    width: 58%;
+    float: left;
+}
+
+.layout1 aside {
+    width: 40%;
+    float: right;
+
+}
+
+.layout1 footer {
+    clear: both;
+}
+
+/* MODERN LAYOUT #2 */
+
+.layout2 header .logo {
+    width: 20%;
+    float: left;
+    margin: 0;
+}
+
+.layout2 header nav {
+    width: 78%;
+    float: right;
+    margin: 0;
+}
+
+.layout2 header::after {
+    display: table;
+    content: "";
+    clear: both;
+}
+
+.layout2 .sidenav {
+    width: 20%;
+    float: left;
+}
+
+.layout2 .sidebar {
+    width: 20%;
+    float: right;
+}
+
+.layout2 article {
+    width: 56%;
+    float: left;
+    margin-left: 2%;
+}
+
+.layout2 footer {
+    clear: both;
+}
+
+/* MODERN LAYOUT #3 */
+
+.layout1 .logo {
+    width: 20%;
+    float: right;
+    margin: 0;
+}
+
+.layout1 nav {
+    width: 78%;
+    float: left;
+    margin: 0;
+
+}
+
+.layout1 header::after {
+    display: table;
+    content: "";
+    clear: both;
+}
+
+.layout1 article {
+    width: 30%;
+    margin-left: 3%;
+    float: left;
+}
+
+.layout1 .articles {
+    display: table;
+    content: "";
+}
+
+/* SIMPLE MEDIA QUERIES FOR RESPONSIVE LAYOUTS */
+
+@media screen and (max-width: 768px){
+    .layout1 article,
+    article,
+    aside,
+    header {
+        float: none;
+        width: 100%;
+        margin: 0 0 2%;
+    }
+
+}
