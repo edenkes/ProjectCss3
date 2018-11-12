@@ -423,6 +423,13 @@ input[type="checkbox"]:checked ~ .more-info {
    SIMPLE MEDIA QUERIES FOR RESPONSIVE LAYOUTS
    ============================================ */
 
+@media screen and ( max-width : 1110px ) {
+    h2 {
+        font-size: 3.5rem !important;
+        color: white;
+    }
+}
+
 @media screen and ( max-width : 1000px ) {
     img:not(.footer-img) {
         height: 25%;
@@ -445,9 +452,14 @@ input[type="checkbox"]:checked ~ .more-info {
         width: 100%;
     }
 
+    .first-layout{
+        width: 100%;
+    }
     .separator{
         height: 10px;
+        width: 100%;
     }
+
     .header,
     .header header {
         height: 100px;
@@ -480,14 +492,26 @@ input[type="checkbox"]:checked ~ .more-info {
 
     h1 {
         font-size: 3rem;
+        width: 100%;
     }
 
     h2 {
         font-size: 2rem !important;
+
     }
 
     p {
         width: 90%;
+    }
+
+
+    ul.panel-contact li {
+        min-width: 100%;
+    }
+
+    .header header li {
+        min-width: 30%;
+        padding-bottom: 1%;
     }
 }
 
@@ -495,5 +519,15 @@ input[type="checkbox"]:checked ~ .more-info {
 @media screen and ( max-width : 568px ) {
     img:not(.footer-img) {
         display: none;
+    }
+
+    .header header li {
+        min-width: 100%;
+    }
+
+    .header,
+    .header header {
+        height: 160px;
+
     }
 }
