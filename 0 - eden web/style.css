@@ -44,14 +44,11 @@ h1 {
     0 20px 20px rgba(0,0,0,.3);
 }
 
-.first-layout {
-
-}
-
 .section {
     height: 100%;
     width: 100%;
     background: -webkit-linear-gradient(-90deg, white, #1d4698);
+    z-index: -5;
 
     /*position: relative;*/
     min-height: 400px;
@@ -62,17 +59,47 @@ h1 {
     height: 45px;
     background: #323a45;
 }
-/*
-.middle-layout {
-    background: -webkit-linear-gradient(-90deg, #1d4698, black);
-    !*background: linear-gradient(-90deg, #1d4698, black);*!
 
-}*/
-/*
-.bottom-footer {
-    background: black;
-    height: 100px;
-}*/
+.info {
+    background: #6cb9e9 !important;
+    min-height: 250px;
+    padding: 25px 0;
+}
+
+.headline {
+    /*float: right;*/
+    margin: 4% 8% 0;
+    font-size: 5rem;
+    /*font-size: 75px;*/
+    line-height: 1.1em;
+    font-style: normal;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #444444;
+    font-family: "Montserrat", sans-serif;
+    max-width: 40%;
+    z-index: 1;
+}
+
+.headline small{
+    font-size: 5rem;
+    text-transform: capitalize;
+}
+.bottom {
+    /*float: left;*/
+
+    margin: 2% 0 0;
+    font-size: 2rem;
+    line-height: 1em;
+    font-style: normal;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #444444;
+    font-family: "Montserrat", sans-serif;
+    max-width: 100%;
+    z-index: 1;
+}
+
 
 /*  ======================================
     header
@@ -81,6 +108,7 @@ h1 {
     height: 45px;
     width: 100%;
 }
+
 .header header {
     height: 45px;
     width: 100%;
@@ -101,13 +129,6 @@ h1 {
     box-shadow: 0 0 1px 0 rgba(5, 5, 5, 0.3);
     box-sizing: border-box;
 }
-/*
-
-.header div {
-    height: 45px;
-    background: black;
-}
-*/
 
 .header header ul {
     list-style: none;
@@ -135,10 +156,8 @@ h1 {
     font-size: 1.0rem;
     padding: 6px 18px;
     text-transform: uppercase;
-    /*font-family: nunito sans;*/
     letter-spacing: 1px;
     transition: border-bottom linear 0.5s;
-    /*transition: border-bottom-width linear 2s;*/
 }
 
 .header a:hover {
@@ -185,37 +204,6 @@ ul.panel-contact li {
     font-size: 20px;
     font-family: "Montserrat", sans-serif;
 }
-/*
-
-ul.panel-contact li:before {
-    position: absolute;
-    margin-left: -70px;
-    margin-top: -11px;
-    content: "";
-    display: table;
-    height: 50px;
-    width: 50px;
-
-}
-
-ul.panel-contact li.address:before{
-    background: url("img/home-circle.svg") no-repeat;
-    background-size: cover;
-    filter: invert(0.8);
-}
-
-ul.panel-contact li.phone:before{
-    background: url("img/cellphone-android.svg") no-repeat;
-    background-size: cover;
-    filter: invert(0.8);
-}
-
-ul.panel-contact li.mail:before{
-    background: url("img/email-outline.svg") no-repeat;
-    background-size: cover;
-    filter: invert(0.8);
-}
-*/
 
 .footer h4 {
     color: #1d4698;
@@ -227,16 +215,14 @@ ul.panel-contact li.mail:before{
     Home
     ====================================== */
 
-.summary::before {
+.summary img {
     position: absolute;
-    content: "";
-    height: 451px;
-    width: 744px;
-    top: 100px;
-    right: -130px;
-    background: url('img/static-ziv_1TP.png') no-repeat;
-    background-size: 100%;
-    opacity: .7;
+    right: -15%;
+    opacity: 0.7;
+    /*float: right;*/
+    /*margin-right: -10%;*/
+    /*margin-right: -130px;*/
+    /*z-index: -1;*/
 }
 
 .summary h2 {
@@ -260,20 +246,15 @@ ul.panel-contact li.mail:before{
     max-width: 70%;
 }
 
-
 .arrow {
     position: relative;
     display: inline-block;
-    padding: 0px 40px;
+    padding: 0 40px;
     margin: 10px 0 5%;
     line-height: 60px;
-    /*border: dashed 1px #ff5234;*/
     border: solid 2px #e24a2d;
     background-color: #ff5333;
-    /*background-size: 20px 20px;*/
-    /*border: 1px solid #555;*/
     border-radius: 35px;
-    /*border: none;*/
     font-size: 24px;
     font-weight: 700;
     font-family: "Montserrat", sans-serif;
@@ -298,16 +279,14 @@ ul.panel-contact li.mail:before{
 
 .arrow:hover {
     border: solid 2px #c94128;
-
-    /*transform:translate(-50%, 0);*/
     padding: 0 60px 0 20px;
 }
 
 .arrow:hover:after {
-    /*transform:translate(0, 50%);*/
     right: 1.2em;
     opacity: 1;
 }
+
 
 /*  ======================================
     Experience
@@ -315,38 +294,6 @@ ul.panel-contact li.mail:before{
 
 .experience .section {
     background: linear-gradient(to bottom, #fdfeff 0%, #6cb9e9 100%);
-}
-
-.info {
-    background: #6cb9e9 !important;
-    min-height: 250px;
-}
-
-.headline {
-    margin: 4% 8% 0;
-    font-size: 5rem;
-    /*font-size: 75px;*/
-    line-height: 1.1em;
-    font-style: normal;
-    font-weight: 900;
-    text-transform: uppercase;
-    color: #444444;
-    font-family: "Montserrat", sans-serif;
-    max-width: 40%;
-    z-index: 1;
-}
-
-.bottom {
-    margin: 2% 8% 0;
-    font-size: 2rem;
-    line-height: 1em;
-    font-style: normal;
-    font-weight: 900;
-    text-transform: uppercase;
-    color: #444444;
-    font-family: "Montserrat", sans-serif;
-    max-width: 100%;
-    z-index: 1;
 }
 
 .experience li {
@@ -357,24 +304,29 @@ ul.panel-contact li.mail:before{
     z-index: 2;
 }
 
+.experience li:first-child {
+    padding-left: 0;
+}
+
 .developer img {
-    position: absolute;
-    top: 50px;
-    right: 0;
+    /*position: absolute;*/
+    float: right;
+    /*top: 50px;*/
+    /*right: 0;*/
+    margin-right: 2%;
     opacity: 0.8;
 }
 
 .army img {
-    position: absolute;
-    top: 850px;
-    right: 50px;
-    opacity: 0.9;
-}
-/*
-.main-headline {
-    height: 450px;
+    /*position: absolute;*/
+    /*top: 850px;*/
+    float: right;
+    margin-right: 10%;
+    /*margin-right: 150px;*/
 
-}*/
+    /*right: 150px;*/
+    opacity: 0.7;
+}
 
 h4.experience.blue  {
     color: #6cb9e9;
@@ -385,47 +337,63 @@ h4.experience.blue  {
     Education
     ====================================== */
 
+.education .section {
+    background: linear-gradient(to bottom, #fdfeff -50%, #6cb9e9 100%);
+    min-height: 200px;
+}
+
+.more-info {
+    padding-bottom: 50px;
+}
+
+h4.education.blue  {
+    color: #6cb9e9;
+}
+
+.university img {
+    /*position: absolute;*/
+    /*top: 120px;*/
+    /*right: 50px;*/
+    float: right;
+    opacity: 0.8;
+    margin-right: 10%;
+    /*margin-right: 100px;*/
+    margin-top: 50px;
+}
+
+.school img {
+    /*position: absolute;*/
+    /*top: 850px;*/
+    /*right: 50px;*/
+    float: right;
+    opacity: 0.8;
+    /*margin-right: 100px;*/
+    margin-right: 10%;
+    margin-top: 50px;
+}
+
+
 /*  ======================================
     Proficiency
     ====================================== */
 
-
-
-
-/*
-
-
-.blue {
-    color: #3db0f5;
-    text-align: center;
-    cursor: auto;
+.proficiency .section {
+    background: linear-gradient(to bottom, #fdfeff 0%, #6cb9e9 100%);
+    min-height: 200px;
 }
 
-label {
-    padding: 25px 15px;
-    margin: 0;
+.proficiency .section:not(.programming) {
+    background: linear-gradient(to bottom, #fdfeff -100%, #6cb9e9 100%);
+}
+
+h4.proficiency.blue  {
+    color: #6cb9e9;
 }
 
 
-*/
 
-/*
 
-section {
-    box-shadow: 1px 1px 1px 1px #e6e6e6;
-    padding: 10px;
-    margin: 0;
-    background: black;
-}
-*/
 
-/*
-
-h4 small{
-    color: black;
-    font-size: 1.4rem;
-}
-*/
 
 /*
 .more-info {
@@ -455,18 +423,77 @@ input[type="checkbox"]:checked ~ .more-info {
    SIMPLE MEDIA QUERIES FOR RESPONSIVE LAYOUTS
    ============================================ */
 
-@media screen and ( max-width : 768px ) {
-    .layout1 main,
-    .layout1 .articles,
-    .layout1 article,
-    .layout1 aside,
-    .layout1 header,
-    .layout1 header .logo,
-    .layout1 header nav {
+@media screen and ( max-width : 1000px ) {
+    img:not(.footer-img) {
+        height: 25%;
+        width: 25%;
+        /*margin-right: 50px;*/
+    }
+
+    img.home-img {
+        position: absolute;
+        /*z-index: 0;*/
+        width: 100%;
+        height: 100%;
+        float: none;
+        opacity: 0.5;
+        filter: sepia(1);
+    }
+
+    .header,
+    body {
+        width: 100%;
+    }
+
+    .separator{
+        height: 10px;
+    }
+    .header,
+    .header header {
+        height: 100px;
+
+    }
+
+    .headline {
+        font-size: 3rem;
+        width: 100%;
+        /*margin-top: 4%;*/
+        margin: 4% 0 0;
+    }
+
+    .section {
+        width: 100%;
+        min-height: 50px;
+        padding-left: 5%;
+    }
+
+    .info {
+        width: 100%;
+    }
+
+    .experience li{
+        /*list-style: none;*/
         display: block;
         float: none;
         width: 100%;
-        margin: 0 0 2%;
     }
 
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2rem !important;
+    }
+
+    p {
+        width: 90%;
+    }
+}
+
+
+@media screen and ( max-width : 568px ) {
+    img:not(.footer-img) {
+        display: none;
+    }
 }
