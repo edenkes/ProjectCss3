@@ -183,6 +183,7 @@ h1:hover {
 .header header li {
     display: inline-block;
     margin: 0 2% 0 0;
+    /*overflow: fragments;*/
 }
 
 .header a:link,
@@ -436,14 +437,21 @@ h4.proficiency.blue  {
     color: #6cb9e9;
 }
 
+.proficiency .more-info {
+    padding-bottom: 0;
+}
+
 .proficiency ul {
     list-style: none;
+    width: 95%;
     /*text-align: center;*/
     /*align-items: center;*/
     /*flex-direction: row;*/
     overflow: hidden;
-    /*margin: 0;*/
-    padding: 2%;
+    overflow-y: visible;
+
+    margin: 0;
+    padding-bottom: 30px;
 }
 
 .proficiency li {
@@ -451,13 +459,12 @@ h4.proficiency.blue  {
     width: fit-content;
     min-width: 150px;
     padding: 70px 10px;
+    margin: 25px 5%;
+
     border-radius: 100%;
     background: black;
     text-align: center;
     float: left;
-    margin: 40px;
-
-
 }
 
 .proficiency li:first-child {
@@ -615,7 +622,6 @@ input[type="checkbox"]:checked ~ .more-info {
         height: 85px;
     }
 
-    /*TODO*/
     .header header li {
         min-width: 30%;
         padding-bottom: 1%;
@@ -663,9 +669,10 @@ input[type="checkbox"]:checked ~ .more-info {
         width: 250px;
     }
 
-    h2 {
+    .summary h2 {
         font-size: 2rem !important;
-
+        max-width: 100%;
+        margin: 0;
     }
 
     p {
@@ -707,7 +714,7 @@ input[type="checkbox"]:checked ~ .more-info {
     .proficiency li {
         min-width: 70px;
         padding: 30px 2px;
-        margin: 5%;
+        margin: 5px 5%;
     }
     .proficiency .tooltip:before {
         font-size: 0.5rem;
