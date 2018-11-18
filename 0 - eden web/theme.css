@@ -1,0 +1,210 @@
+html,
+body,
+header,
+.view {
+    min-height: 100%;
+    height: fit-content;
+    overflow-x: hidden;
+}
+
+.view {
+    /*background-color: pink;*/
+    background: linear-gradient(to bottom, #fdfeff -50%, #6cb9e9 100%);
+    height: calc(100% - 90px);
+    /*overflow: hidden;*/
+}
+#header {
+    margin: 0;
+    overflow-y: hidden;
+}
+#footer {
+    margin: -2px 0 0;
+}
+
+footer.page-footer {
+    color: white;
+}
+
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+
+#home-ic {
+    position: sticky;
+    top: 0;
+    /*width: 400px;*/
+    /*max-width: 960px;*/
+    /*z-index: 6;*/
+    margin: 0px 0 0px;
+    /*padding-bottom: 20px;*/
+    transform: rotate(-3deg);
+    /*color: white;*/
+    /*text-align: left;*/
+    /*font-size: 5rem;*/
+    line-height: 5rem;
+    cursor: pointer;
+    border: none;
+    text-shadow:  0 1px 0 hsl(52,7%,20%),
+    0 2px 0 hsl(52,7%,18%),
+    0 3px 0 hsl(52,7%,16%),
+    0 4px 0 hsl(52,7%,14%),
+    0 5px 0 hsl(52,7%,12%),
+    0 6px 0 hsl(52,7%,10%),
+    0 7px 0 hsl(52,7%,8%),
+    0 8px 0 hsl(52,7%,6%),
+
+    0 0 5px rgba(0,0,0,.05),
+    0 1px 3px rgba(0,0,0,.2),
+    0 3px 5px rgba(0,0,0,.2),
+    0 5px 10px rgba(0,0,0,.2),
+    0 10px 10px rgba(0,0,0,.2),
+    0 20px 20px rgba(0,0,0,.3);
+}
+
+h1:hover {
+    color: #1d4698;
+}
+
+#img-bg {
+    position: absolute;
+    top: 90px;
+    right: -15%;
+    opacity: 0.6;
+    z-index: 0;
+}
+
+.headline {
+    font-size: 4.4rem;
+    line-height: 1em;
+    font-style: normal;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #444444;
+    font-family: "Montserrat", sans-serif;
+    width: 40vw;
+    z-index: 1;
+}
+
+.bottom-line {
+    font-size: 1.1rem;
+    font-style: normal;
+    font-family: "Montserrat", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 300;
+    z-index: 1;
+    width: 80vw;
+}
+
+
+.arrow {
+    position: relative;
+    display: inline-block;
+    padding: 0 40px;
+    margin: 10px 0 0;
+    line-height: 60px;
+    border: solid 2px #e24a2d;
+    background-color: #ff5333;
+    border-radius: 35px;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+    font-style: italic;
+    text-decoration: none;
+    text-transform: none;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.arrow:after {
+    position: absolute;
+    top: 50%;
+    right: 0.6em;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    content: "»";
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.arrow:hover {
+    border: solid 2px #c94128;
+    padding: 0 60px 0 20px;
+}
+
+.arrow:hover:after {
+    right: 1.2em;
+    opacity: 1;
+}
+/*
+#target1:before {
+    position: absolute;
+    top: 90px;
+    right: -10px;
+    opacity: 0.7;
+
+    background: url("img/static-ziv_1TP.png");
+    content: "";
+    height: 451px;
+    width: 744px;
+
+}*/
+
+.navbar {
+    height: 90px;
+    background: rgba(33, 33, 33, 0.87) !important;
+}
+
+
+.separator {
+    height: 90px;
+    /*width: 100%;*/
+    /*background: #323a45;*/
+    background: rgba(33, 33, 33, 0.87);
+
+}
+@media (max-width: 740px) {
+    #target1:before {
+        display: none;
+    }
+
+    .headline {
+        font-size: 2.8rem;
+    }
+
+    .navbar:not(#header) {
+        height: fit-content;
+    }
+
+    #header {
+        height: 108px;
+    }
+}
+/*
+@media (max-width: 740px) {
+    html,
+    body,
+    header,
+    .view {
+        height: 100vh;
+    }
+
+    #target1:before {
+        display: none;
+    }
+}
+
+.top-nav-collapse {
+    background-color: #78909c !important;
+}
+
+.navbar:not(.top-nav-collapse) {
+    !*background: transparent !important;*!
+}
+
+@media (max-width: 991px) {
+    .navbar:not(.top-nav-collapse) {
+        background: #78909c !important;
+    }
+}*/

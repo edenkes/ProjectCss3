@@ -1,19 +1,179 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Eden Keshet CV</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- PROJECT THEME CSS -->
-    <!--<link rel="stylesheet" href="theme.css">-->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!--This is the main THEME of my website-->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="theme.css">
 
-    <link href="https://fonts.googleapis.com/css?family=Bubblegum+Sans|Nova+Mono|Roboto+Condensed" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+    <title>Eden Keshet CV</title>
 </head>
 <body>
+
+<header >
+    <div id="header" class="navbar bg-dark"></div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top
+    scrolling-navbar">
+        <div class="container">
+
+            <a class="navbar-brand" href="index.html">
+                <h1 id="home-ic">Eden Keshet</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="experience.html">Experience</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a  class="nav-link" href="education.html">Education</a></li>
+                    <li class="nav-item">
+                        <a  class="nav-link" href="proficiency.html">Proficiency</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+    <!-- Navbar -->
+</header>
+
+<div class="view pb-4 pt-4 ">
+    <!-- Content -->
+    <div class="container pb-4">
+        <div class="row">
+            <div class="ol-lg-7 col-xl-7">
+                <h2 class="headline pb-4">
+                    <small>B.Sc</small> in Computer Science
+                </h2>
+                <h3 class="bottom-line pb-4">
+                    Ben Gurion University of the Negev, <br>Beer Sheva, Israel
+                </h3>
+            </div>
+            <div class="col-lg-4 col-xl-4">
+                <img src="img/professor.svg" height="279" width="280">
+            </div>
+
+        </div>
+    </div>
+    <div class="container pb-4">
+
+        <p>
+            Studies in the Computer Science Department in a special program for big data. GPA: 80.5
+            <br><b> Relevant Courses: </b>
+        </p>
+        <div class="row">
+            <div class="col-lg-4 col-xl-4">
+                <p>
+                    Introduction for Machine Learning.
+                </p>
+
+            </div>
+            <div class="col-lg-4 col-xl-4">
+                <p>
+                    Artificial Intelligence.
+                </p>
+            </div>
+            <div class="col-lg-4 col-xl-4">
+                <p>
+                    Statistical methods for big data.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- Content -->
+</div>
+
+<div class="separator"></div>
+
+<div class="view pb-4 pt-4 ">
+    <!-- Content -->
+    <div class="container pb-4">
+        <div class="row">
+            <div class="ol-lg-7 col-xl-7">
+                <h2 class="headline pb-4">
+                    Highschool
+                </h2>
+                <h3 class="bottom-line pb-4">
+                    at Ramot Hefer school<br> in Kibbutz Ma'abarot, Emek Hefer.
+                </h3>
+
+                <a href="https://play.google.com/store/apps/details?id=bredesh.medico">
+                    <img class="download col-md-12" src="img/download.svg" width="75" height="75">
+                    <!--You can Download the app-->
+                </a>
+
+            </div>
+            <div class="col-lg-4 col-xl-4">
+                <img class="school" src="img/student.svg" height="279" width="280">
+            </div>
+
+        </div>
+    </div>
+    <div class="container pb-4">
+        <p>
+            Full matriculation and expansion of physics (score 93) and robotics with programming in C++ (final score
+            100),<br> in Ramot Hefer in Kibbutz Ma'abarot. GPA: 108.
+        </p>
+    </div>
+</div>
+<!-- Content -->
+
+<footer id="footer" class="page-footer footer-dark bg-dark unique-color-dark pt-4">
+    <div class="container">
+
+        <div class="col-md-3 col-lg-12 col-xl-12 pb-4">
+
+            <h5 class="text-uppercase font-weight-bold text-center">
+                <strong>Contact Information</strong>
+            </h5>
+            <hr class="info-color" style="width: 30%;background: #4b4f56">
+
+            <div class="row align-items-center">
+                <div class="col-lg-4 col-xl-4">
+                    <h5 class="text-center"><i class="fa fa-home text-center">
+                    </i> Kibutz HaOgen
+                    </h5>
+                </div>
+                <div class="col-lg-4 col-xl-4">
+                    <h5 class="text-center"><i class="fa fa-mobile-phone">
+                    </i> 055-6601013
+                    </h5>
+                </div>
+                <div class="col-lg-4 col-xl-4">
+                    <h5 class="text-center"><i class="fa fa-envelope">
+                    </i> edenkeshet@gmail.com
+                    </h5>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    </div>
+</footer>
+
+<!--
 
 <div class="header">
     <div class="separator"></div>
@@ -127,6 +287,7 @@
         </li>
     </ul>
 </section>
+-->
 
 </body>
 </html>

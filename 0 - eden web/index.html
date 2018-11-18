@@ -1,46 +1,255 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!--This is the main THEME of my website-->
+    <link rel="stylesheet" href="theme.css">
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
     <title>Eden Keshet CV</title>
 
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>-->
     <!-- PROJECT THEME CSS -->
     <!--<link rel="stylesheet" href="theme.css">-->
 
     <!--This is the main THEME of my website-->
-    <link rel="stylesheet" href="style.css">
+    <!--<link rel="stylesheet" href="style.css">-->
 
-    <link href="https://fonts.googleapis.com/css?family=Bubblegum+Sans|Nova+Mono|Roboto+Condensed" rel="stylesheet">
+    <!--<link href="https://fonts.googleapis.com/css?family=Bubblegum+Sans|Nova+Mono|Roboto+Condensed" rel="stylesheet">-->
 </head>
 <body>
+<header >
+    <div id="header" class="navbar bg-dark"></div>
 
-<div class="home header">
-    <div class="separator"></div>
-    <header >
-        <!--<div class="logo">-->
-        <!--Logo-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top scrolling-navbar">
+        <div class="container">
+
+            <a class="navbar-brand" href="#">
+                <h1 id="home-ic">Eden Keshet</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <!--<li><a href="index.html">Home</a></li>-->
+                    <!--<li><a href="index.html#summary">Summary</a></li>-->
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="experience.html">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a  class="nav-link" href="education.html">Education</a></li>
+                    <li class="nav-item">
+                        <a  class="nav-link" href="proficiency.html">Proficiency</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+    <!-- Navbar -->
+</header>
+<!-- Full Page Intro -->
+<!--<div class="view" style="background-image: url('https://mdbootstrap.com/img/Photos/Others/img%20%2848%29.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">-->
+<div class="view pb-4 pt-4 ">
+    <!-- Mask & flexbox options-->
+    <!--<div class="mask rgba-black-light d-flex justify-content-center align-items-center">-->
+    <!-- Content -->
+    <div id="target1"  class="container pb-4">
+        <!--Grid row-->
+        <!--<div class="row">-->
+        <!--Grid column-->
+
+        <!--<div class="col-md-12 pt-4 white-text pb-4">-->
+            <img id="img-bg" class="image" src="img/static-ziv_1TP.png" height="451" width="744">
+            <h2 class="headline pb-4">A resume of my professional life</h2>
+            <p class="bottom-line pb-4">
+                Ben-Gurion University graduate with a bachelor's degree in computer science. <br>
+                Knowledge and experience from university and military service period with a strong work ethic, reliable,
+                responsible and capable, with high self-learning.
+            </p>
+
+            <a href="experience.html">
+                <div class="arrow">
+                    Get Started
+                </div>
+            </a>
+
+            <!--<h1 class="h1-reponsive white-text text-uppercase font-weight-bold mb-0 pt-md-5 pt-5 wow fadeInDown" data-wow-delay="0.3s"><strong>Minimalist intro</strong></h1>-->
+            <!--<hr class="hr-light my-4 wow fadeInDown" data-wow-delay="0.4s">-->
+            <!--<h5 class="text-uppercase mb-4 white-text wow fadeInDown" data-wow-delay="0.4s"><strong>Photography & design</strong></h5>-->
+            <!--<a class="btn btn-outline-white wow fadeInDown" data-wow-delay="0.4s">portfolio</a>-->
+            <!--<a class="btn btn-outline-white wow fadeInDown" data-wow-delay="0.4s">About me</a>-->
         <!--</div>-->
-        <nav>
-            <ul class="up-nav">
-                <!--<li><a href="index.html">Home</a></li>-->
-                <!--<li><a href="index.html#summary">Summary</a></li>-->
-                <li><a href="experience.html">Experience</a></li>
-                <li><a href="education.html">Education</a></li>
-                <li><a href="proficiency.html">Proficiency</a></li>
-            </ul>
-        </nav>
-    </header>
+        <!--Grid column-->
+    </div>
+
+    <!-- Content -->
 </div>
+<!-- Mask & flexbox options-->
+<!--</div>-->
+<footer id="footer" class="page-footer footer-dark bg-dark unique-color-dark pt-4">
+    <div class="container">
+
+        <div class="col-md-3 col-lg-12 col-xl-12 pb-4">
+
+            <h5 class="text-uppercase font-weight-bold text-center">
+                <strong>Contact Information</strong>
+            </h5>
+            <hr class="info-color" style="width: 30%;background: #4b4f56">
+
+            <div class="row align-items-center">
+                <div class="col-lg-4 col-xl-4">
+                    <h5 class="text-center"><i class="fa fa-home text-center">
+                    </i> Kibutz HaOgen
+                    </h5>
+                </div>
+                <div class="col-lg-4 col-xl-4">
+                    <h5 class="text-center"><i class="fa fa-mobile-phone">
+                    </i> 055-6601013
+                    </h5>
+                </div>
+                <div class="col-lg-4 col-xl-4">
+                    <h5 class="text-center"><i class="fa fa-envelope">
+                    </i> edenkeshet@gmail.com
+                    </h5>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    </div>
+</footer>
+<!--
+
+<header>
+    &lt;!&ndash;Navbar&ndash;&gt;
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#"><strong>MDB</strong></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7" aria-controls="navbarSupportedContent-7" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Profile</a>
+                    </li>
+                </ul>
+                <form class="form-inline">
+                    <div class="md-form my-0">
+                        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </nav>
+    &lt;!&ndash; Navbar &ndash;&gt;
+    &lt;!&ndash; Full Page Intro &ndash;&gt;
+    <div class="view" style="background-image: url('https://mdbootstrap.com/img/Photos/Others/img%20%2848%29.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+        &lt;!&ndash; Mask & flexbox options&ndash;&gt;
+        <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+            &lt;!&ndash; Content &ndash;&gt;
+            <div class="container">
+                &lt;!&ndash;Grid row&ndash;&gt;
+                <div class="row">
+                    &lt;!&ndash;Grid column&ndash;&gt;
+                    <div class="col-md-12 mb-4 white-text text-center">
+                        <h1 class="h1-reponsive white-text text-uppercase font-weight-bold mb-0 pt-md-5 pt-5 wow fadeInDown" data-wow-delay="0.3s"><strong>Minimalist intro</strong></h1>
+                        <hr class="hr-light my-4 wow fadeInDown" data-wow-delay="0.4s">
+                        <h5 class="text-uppercase mb-4 white-text wow fadeInDown" data-wow-delay="0.4s"><strong>Photography & design</strong></h5>
+                        <a class="btn btn-outline-white wow fadeInDown" data-wow-delay="0.4s">portfolio</a>
+                        <a class="btn btn-outline-white wow fadeInDown" data-wow-delay="0.4s">About me</a>
+                    </div>
+                    &lt;!&ndash;Grid column&ndash;&gt;
+                </div>
+                &lt;!&ndash;Grid row&ndash;&gt;
+            </div>
+            &lt;!&ndash; Content &ndash;&gt;
+        </div>
+        &lt;!&ndash; Mask & flexbox options&ndash;&gt;
+    </div>
+    &lt;!&ndash; Full Page Intro &ndash;&gt;
+</header>
+
+&lt;!&ndash; Navbar &ndash;&gt;
+&lt;!&ndash; Full Page Intro &ndash;&gt;
+<div class="view">
+    <video class="video-intro" poster="https://mdbootstrap.com/img/Photos/Others/background.jpg" playsinline autoplay muted loop>
+        <source src="https://mdbootstrap.com/img/video/animation.mp4" type="video/mp4">
+    </video>
+    &lt;!&ndash; Mask & flexbox options&ndash;&gt;
+    <div class="mask rgba-gradient d-flex justify-content-center align-items-center">
+        &lt;!&ndash; Content &ndash;&gt;
+        <div class="container px-md-3 px-sm-0">
+            &lt;!&ndash;Grid row&ndash;&gt;
+            <div class="row wow fadeIn">
+                &lt;!&ndash;Grid column&ndash;&gt;
+                <div class="col-md-12 mb-4 white-text text-center wow fadeIn">
+                    <h3 class="display-3 font-weight-bold white-text mb-0 pt-md-5 pt-5">Creative Agency</h3>
+                    <hr class="hr-light my-4 w-75">
+                    <h4 class="subtext-header mt-2 mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit deleniti consequuntur nihil.</h4>
+                    <a href="#!" class="btn btn-rounded btn-outline-white">
+                        <i class="fa fa-home"></i> Visit us
+                    </a>
+                </div>
+                &lt;!&ndash;Grid column&ndash;&gt;
+            </div>
+            &lt;!&ndash;Grid row&ndash;&gt;
+        </div>
+        &lt;!&ndash; Content &ndash;&gt;
+    </div>
+    &lt;!&ndash; Mask & flexbox options&ndash;&gt;
+</div>
+&lt;!&ndash; Full Page Intro &ndash;&gt;
+</header>
+&lt;!&ndash; Main navigation &ndash;&gt;
+&lt;!&ndash;Main Layout&ndash;&gt;
+<main>
+    <div class="container">
+        &lt;!&ndash;Grid row&ndash;&gt;
+        <div class="row py-5">
+            &lt;!&ndash;Grid column&ndash;&gt;
+            <div class="col-md-12 text-center">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            &lt;!&ndash;Grid column&ndash;&gt;
+        </div>
+        &lt;!&ndash;Grid row&ndash;&gt;
+    </div>
+</main>
+&lt;!&ndash;Main Layout&ndash;&gt;
+-->
+<!--
 
 <div class="first-layout home">
 
     <div class="section summary">
         <img class="home-img" src="img/static-ziv_1TP.png" height="451" width="744">
-
-        <a href="index.html">
-            <h1 id="home">Eden Keshet</h1>
-        </a>
         <h2>A resume of my professional life</h2>
         <div class="content"  id="summary">
             <p>
@@ -57,6 +266,7 @@
     </div>
 
 </div>
+-->
 
 <!--
 
@@ -81,6 +291,7 @@
 </section>
 -->
 
+<!--
 <section class="footer">
     <h4 class="blue">
         Please contact my through</h4>
@@ -105,6 +316,7 @@
         </li>
     </ul>
 </section>
+-->
 <!--
 
 <section class="middle-layout">
@@ -368,5 +580,6 @@
         &copy;2018 Brightside Studios Inc.
     </div>
 </footer>-->
+
 </body>
 </html>
