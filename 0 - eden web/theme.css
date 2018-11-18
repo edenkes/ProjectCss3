@@ -164,10 +164,13 @@ h1:hover {
     background: rgba(33, 33, 33, 0.87);
 
 }
+
 @media (max-width: 740px) {
-    #target1:before {
+    #img-bg {
         display: none;
     }
+
+
 
     .headline {
         font-size: 2.8rem;
@@ -180,31 +183,9 @@ h1:hover {
     #header {
         height: 108px;
     }
-}
-/*
-@media (max-width: 740px) {
-    html,
-    body,
-    header,
-    .view {
-        height: 100vh;
+
+    .separator {
+        height: 45px;
     }
 
-    #target1:before {
-        display: none;
     }
-}
-
-.top-nav-collapse {
-    background-color: #78909c !important;
-}
-
-.navbar:not(.top-nav-collapse) {
-    !*background: transparent !important;*!
-}
-
-@media (max-width: 991px) {
-    .navbar:not(.top-nav-collapse) {
-        background: #78909c !important;
-    }
-}*/
