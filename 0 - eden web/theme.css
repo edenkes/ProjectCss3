@@ -66,6 +66,13 @@ h1:hover {
     color: #1d4698;
 }
 
+img {
+    opacity: 0.7;
+}
+
+img:hover {
+    opacity: 1;
+}
 #img-bg {
     position: absolute;
     top: 90px;
@@ -73,6 +80,8 @@ h1:hover {
     opacity: 0.6;
     z-index: 0;
 }
+
+
 
 .headline {
     font-size: 4.4rem;
@@ -144,7 +153,7 @@ h1:hover {
     right: -10px;
     opacity: 0.7;
 
-    background: url("img/static-ziv_1TP.png");
+    background: url("img/bg-computer-guy.png");
     content: "";
     height: 451px;
     width: 744px;
